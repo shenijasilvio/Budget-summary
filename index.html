@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginBox">
+            <center>
+            <h2>Login</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td>Email</td> <td> <input type="email" id="loginEmail" placeholder="Email" required> </td>
+                    </tr>
+        
+                    <tr>
+                        <td>password</td> <td> <input type="password" id="loginPassword" placeholder="password" required> </td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="button" onclick="login()">Login</button> </td>
+                        <td><p>Don't have an account? <a href="#" onclick="toggleForms()">Register</a></p></td>
+                    </tr>
+        
+                </table>
+            </form>
+            </center>
+            
+        </div>
+
+        <div id="registerBox" style="display: none;">
+            <center>
+            <h2>Register</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td>Email</td> <td> <input type="email" id="registerEmail" placeholder="Email" required> </td>
+                    </tr>
+        
+                    <tr>
+                        <td>password</td> <td> <input type="password" id="registerPassword" placeholder="password" required> </td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="button" onclick="register()">Register</button></td>
+                        <td><p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p></td>
+                    </tr>
+        
+                </table>
+            </form>
+            </center>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
